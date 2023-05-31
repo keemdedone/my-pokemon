@@ -1,0 +1,26 @@
+.main {
+    user-select: none;
+    background-color: #333;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 15px;
+
+    .content {
+        border-radius: 5px;
+        background-color: #fff;
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: repeat(6, 150px);
+        text-align: center;
+
+        .item {
+            margin: 5px;
+        }
+    }
+
+    .loading {
+        font-size: 36px;
+        color: #fff;
+    }
+}

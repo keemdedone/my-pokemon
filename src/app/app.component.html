@@ -1,0 +1,11 @@
+<div class="main" [ngSwitch]="loading">
+  <div class="content" *ngSwitchCase="false">
+    <div *ngFor="let poke of results; let i = index" class="item">
+      <img src="{{ poke.photo }}" alt="img" width="96" height="96" />
+      <br />
+      {{ poke.name }}
+    </div>
+  </div>
+
+  <div class="loading" *ngSwitchDefault>...loading</div>
+</div>
